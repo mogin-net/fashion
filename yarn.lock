@@ -4,8 +4,8 @@
 __metadata:
   version: 6
 
-"template@workspace:.":
+"fashion@workspace:.":
   version: 0.0.0-use.local
-  resolution: "template@workspace:."
+  resolution: "fashion@workspace:."
   languageName: unknown
   linkType: soft
