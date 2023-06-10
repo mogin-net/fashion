@@ -1,5 +1,5 @@
 {
-  "name": "template",
+  "name": "fashion",
   "scripts": {
     "static": "cp -r ./src/img ./docs && cp -r ./src/js ./docs",
     "sass": "sass ./src/sass:./docs/css --no-source-map",

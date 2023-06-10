@@ -1,5 +1,5 @@
 {
-  "name": "Template",
+  "name": "Christy Fashion",
   "dockerComposeFile": "docker-compose.yml",
   "service": "web",
   "workspaceFolder": "/workspace",
@@ -17,7 +17,7 @@
     },
     "liveServer.settings.root": "/docs",
     "liveServer.settings.CustomBrowser": "chrome",
-    "liveServer.settings.port": 5500
+    "liveServer.settings.port": 5506
   },
   "extensions": [
     "ducfilan.pug-formatter",
