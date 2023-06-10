@@ -1,0 +1,44 @@
+@include breakpoints((
+  xlarge:   ($xlarge),
+  large:    ($large),
+  medium:   ($medium),
+  small:    ($small),
+  xsmall:   ($xsmall),
+));
+
+body, input, textarea, select {
+  font-family: _font(family);
+  font-weight: _font(weight);
+}
+
+strong, b {
+  font-weight: _font(weight-bold);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: _font(weight-bold);
+}
+
+blockquote {
+  font-style: _font(italic);
+}
+
+em, i {
+  font-style: _font(italic);
+}
+
+sub {
+  position: relative;
+  top: 0.5em;
+  font-size: 0.8em;
+}
+
+sup {
+  position: relative;
+  top: -0.5em;
+  font-size: 0.8em;
+}
+
+br.clear {
+  clear: both;
+}

@@ -1,0 +1,35 @@
+@import 'libs/vars';
+@import 'libs/mixins';
+@import 'libs/functions';
+@import 'libs/colors';
+@import 'libs/reset';
+@import 'libs/demo';
+@import 'libs/crypted';
+@import 'libs/breakpoints';
+@import 'libs/default';
+
+body, input, textarea, select {
+  font-size: 15pt;
+
+  @include breakpoint('<=xlarge') {
+    font-size: 12pt;
+  }
+
+  @include breakpoint('<=large') {
+    font-size: 12pt;
+  }
+
+  @include breakpoint('<=small') {
+    font-size: 11pt;
+  }
+
+  @include breakpoint('<=xsmall') {
+    font-size: 10pt;
+  }
+}
+
+#main {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}

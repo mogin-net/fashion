@@ -1,0 +1,12 @@
+@mixin get-contrast-color($background) {
+  $r: red($background);
+  $g: green($background);
+  $b: blue($background);
+  $yiq: calc((($r*299) + ($g*587) + ($b*114))/1000);
+  @if ($yiq >= 128) {
+    color: #000000;
+  } 
+  @else {
+    color: #FFFFFF;
+  }
+}

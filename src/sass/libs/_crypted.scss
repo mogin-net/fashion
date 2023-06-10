@@ -1,0 +1,15 @@
+.cryptedmail:after {
+  content: attr(data-a) "@" attr(data-b) "." attr(data-c); 
+}
+
+.imgmail {
+  display: none;
+}
+
+.cryptedphone:after {
+  content: "+" attr(data-a) " " attr(data-b) "-" attr(data-c) "-" attr(data-d); 
+}
+
+.imgphone {
+  display: none;
+}

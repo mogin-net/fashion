@@ -1,0 +1,28 @@
+// Font.
+$font: (
+  family: ('Roboto', Helvetica, sans-serif),
+  family-fixed: ('Courier New', monospace),
+  weight: 400,
+  weight-bold: 600,
+  italic: italic,
+);
+
+// Palette.
+$palette: (
+  background:          #ffffff,
+  surface:             #ffffff,
+  error:               #ff0000,
+  primary:             #00416a,
+  secondary:           #ffb620,
+  accent:              #45709d,
+);
+
+$black: #000000;
+$gray:  #777777;
+$white: #ffffff;
+
+$xlarge: 1281px, 1680px;
+$large:   981px, 1280px;
+$medium:  737px,  980px;
+$small:   481px,  736px;
+$xsmall:   null,  480px;

@@ -1,0 +1,78 @@
+$background: map-get($palette, "background");
+$surface: map-get($palette, "surface");
+$error: map-get($palette, "error");
+$primary: map-get($palette, "primary");
+$secondary: map-get($palette, "secondary");
+$accent: map-get($palette, "accent");
+
+.background {
+  &.bg-color {
+    background-color: $background;
+  }
+  &.txt-color {
+    color: $background;
+  }
+  &.txt-contrast {
+    @include get-contrast-color($background);
+  }
+}
+
+.surface {
+  &.bg-color {
+    background-color: $surface;
+  }
+  &.txt-color {
+    color: $surface;
+  }
+  &.txt-contrast {
+    @include get-contrast-color($surface);
+  }
+}
+
+.error {
+  &.bg-color {
+    background-color: $error;
+  }
+  &.txt-color {
+    color: $error;
+  }
+  &.txt-contrast {
+    @include get-contrast-color($error);
+  }
+}
+
+.primary {
+  &.bg-color {
+    background-color: $primary;
+  }
+  &.txt-color {
+    color: $primary;
+  }
+  &.txt-contrast {
+    @include get-contrast-color($primary);
+  }
+}
+
+.secondary {
+  &.bg-color {
+    background-color: $secondary;
+  }
+  &.txt-color {
+    color: $secondary;
+  }
+  &.txt-contrast {
+    @include get-contrast-color($secondary);
+  }
+}
+
+.accent {
+  &.bg-color {
+    background-color: $accent;
+  }
+  &.txt-color {
+    color: $accent;
+  }
+  &.txt-contrast {
+    @include get-contrast-color($accent);
+  }
+}

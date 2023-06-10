@@ -1,0 +1,60 @@
+.demo-colors {
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  .color {
+    display: inline-flex;
+    align-content: center;
+    justify-content: center;
+    width: 80px;
+    height: 20px;
+    border-radius: 10px;
+    border: 3px solid white;
+    box-shadow: 0px 0px 3px 1px rgba(_get-contrast-color(map-get($palette, "background")), 0.25);
+    text-align: center;
+    margin-right: 20px;
+    margin-bottom: 35px;
+    padding: 30px 0;
+    font-size: 15px;
+    line-height: normal;
+    position: relative;
+    font-weight: bold;
+    div {
+      position: absolute;
+      color: _get-contrast-color(map-get($palette, "background"));
+      top: 90px;
+    }
+  }
+
+  .background {
+    &::after {
+      content: "#{map-get($palette, "background")}";
+    }
+  }
+  .surface {
+    &::after {
+      content: "#{map-get($palette, "surface")}";
+    }
+  }
+  .error {
+    &::after {
+      content: "#{map-get($palette, "error")}";
+    }
+  }
+  .primary {
+    &::after {
+      content: "#{map-get($palette, "primary")}";
+    }
+  }
+  .secondary {
+    &::after {
+      content: "#{map-get($palette, "secondary")}";
+    }
+  }
+  .accent {
+    &::after {
+      content: "#{map-get($palette, "accent")}";
+    }
+  }
+}
