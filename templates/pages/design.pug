@@ -1,0 +1,9 @@
+div(id=`${navs.design.title.toLowerCase()}`).section
+  h2 #{navs.design.title}
+  #slideshow 
+    each photo in photos
+      .thumb
+        a(href=`/design/${photo.href}.jpg`).image
+          img(src=`/design/${photo.href}.jpg`)
+        h6(style=`color: ${photo.color};`)= photo.title
+        p= photo.description

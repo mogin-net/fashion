@@ -5,6 +5,9 @@ $primary: map-get($palette, "primary");
 $secondary: map-get($palette, "secondary");
 $accent: map-get($palette, "accent");
 
+$primary-text: _get-contrast-color($background);
+$secondary-text: rgba(_get-contrast-color($background), 0.8);
+
 .background {
   &.bg-color {
     background-color: $background;
