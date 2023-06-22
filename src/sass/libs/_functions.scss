@@ -48,6 +48,14 @@
 	@return val($font, $keys...);
 }
 
+/// Gets a duration value.
+/// @param {string} $keys Key(s).
+/// @return {string} Value.
+@function _duration($keys...) {
+	@return val($duration, $keys...);
+}
+
+
 @function _get-contrast-color($background) {
   $r: red($background);
   $g: green($background);

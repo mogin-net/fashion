@@ -7,14 +7,24 @@ $font: (
   italic: italic,
 );
 
+// Duration
+$duration: (
+  transition:			0.2s,
+  header:				1s,
+  panel:				0.5s,
+  modal:				0.5s,
+  thumb:				0.15s
+);
+
 // Palette.
 $palette: (
   background:          #ffffff,
   surface:             #ffffff,
-  error:               #ff0000,
-  primary:             #00416a,
-  secondary:           #ffb620,
-  accent:              #45709d,
+  error:               #c44c51, // Indian Red
+  primary:             #af6e96, // Medium Lavender Rose
+  secondary:           #8c72af, // Medium Purple
+  // secondary:           #725698, // Slate Blue
+  accent:              #4b7abc, // Cornflower Blue
 );
 
 $black: #000000;

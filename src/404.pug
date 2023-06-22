@@ -1,0 +1,10 @@
+extends /layout.pug
+block title
+  - title = "Page not found"
+
+block content
+  div(id=`${navs.home.title.toLowerCase()}`)
+    .logo-one
+      include /logo1.pug
+    h1 Page Not Found
+    div 404
