@@ -1,15 +1,19 @@
 include /navigation.pug
 include /photos.pug
 - var company = "Christina Hann Trefzger"
+- var description = "We are a dynamic and innovative fashion company dedicated to bringing style and functionality to your everyday life."
+- var baseUrl = "https://fashion.mogin.net"
+- var primaryColor = "#af6e96"
 
 doctype html
 html(lang="en")
   head
     block title
-    - var headerTitle = title ? `Webpage Template Title :: ${title}` : "Webpage Template Title"
+    - var headerTitle = title ? `${company} :: ${title}` : company
     title #{headerTitle}
     meta(charset="utf-8")/
     meta(name="viewport" content="width=device-width, initial-scale=1, user-scalable=no")/
+    include /meta.pug
     link(rel="stylesheet" href="/css/main.css")/
     link(rel="preconnect" href="https://fonts.googleapis.com")/
     link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)/
